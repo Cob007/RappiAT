@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.PopularFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_popular"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"/>
+    <LinearLayout
+        android:id="@+id/ll_nothinghere"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:src="@drawable/ic_crying"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#4b4b4b"
+            android:gravity="center_horizontal"
+            android:text="Nothing here!"
+            fontPath="fonts/Calibri-Bold.ttf"
+            tools:ignore="MissingPrefix"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#474646"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            fontPath="fonts/Calibri.ttf"
+            tools:ignore="MissingPrefix"
+            android:text="Connect to internet"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reload Now"
+            android:textColor="#004000"
+            android:id="@+id/tv_reload"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        fontPath="fonts/Ubuntu-Regular.ttf"
+        tools:ignore="MissingPrefix"
+        android:textColor="@color/colorWhite"
+        android:padding="10dp"
+
+        />
+</FrameLayout>

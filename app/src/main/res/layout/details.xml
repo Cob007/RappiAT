@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/colorBlack">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:src="@drawable/ic_back" />
+
+            <ImageView
+                android:id="@+id/iv_backdrop"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"/>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="25dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorWhite"
+                        fontPath="fonts/Ubuntu-Bold.ttf"
+                        tools:ignore="MissingPrefix"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="16dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rating : "
+                            android:textSize="18sp"
+                            android:textColor="@color/colorWhite"
+                            fontPath="fonts/Ubuntu-Regular.ttf"
+                            tools:ignore="MissingPrefix"/>
+
+                        <TextView
+                            android:id="@+id/tv_rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="7.2"
+                            android:textSize="18sp"
+                            android:textColor="@color/colorWhite"
+                            fontPath="fonts/Ubuntu-Regular.ttf"
+                            tools:ignore="MissingPrefix"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Overview"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorWhite"
+                        fontPath="fonts/Ubuntu-Regular.ttf"
+                        tools:ignore="MissingPrefix"
+                        android:layout_marginTop="16dp"/>
+                    <TextView
+                        android:id="@+id/tv_overview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorWhite"
+                        fontPath="fonts/Ubuntu-Medium.ttf"
+                        tools:ignore="MissingPrefix"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="40dp"/>
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/play"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="350dp"
+            android:layout_gravity="end"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_play_button"/>
+
+
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>
